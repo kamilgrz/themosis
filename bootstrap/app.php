@@ -7,7 +7,8 @@ $app = new Application(THEMOSIS_ROOT);
 /*----------------------------------------------------*/
 // Bind interfaces
 /*----------------------------------------------------*/
-$app->singleton(
+
+$app->bind(
     Illuminate\Contracts\Http\Kernel::class,
     App\Http\Kernel::class
 );
